@@ -59,3 +59,7 @@ opt/scripts/CouchbaseBackup.sh  --cluster         http://10.16.17.254:8091
 2019-08-26 19:46:35 [INFO] [CouchbaseBackup.sh] [Prod-Onboarding-CB] Backup File Deleted - /opt/couchbase-backup/Prod-Onboarding-CB/Full_20190826_1946. Older than 3 days.
 2019-08-26 19:46:35 [INFO] [CouchbaseBackup.sh] [Prod-Onboarding-CB] [Backup Purge]    [Full_20190826_1946] [Success] [0m8.653s]
 ```
+
+# Additional Info
+
+Log file location - ***/root/errwrap/CouchbaseBackup.txt***
