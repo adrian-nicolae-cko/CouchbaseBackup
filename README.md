@@ -4,8 +4,7 @@ Custom Backup Wrapper for Couchbase
 
 Parameters :-
 
-***-c  | --cluster***
-
+***-c  | --cluster***           
 (Mandatory - Specifies the IP Address of the Cluster Node in which to perform the backup + port (e.g. http://192.168.0.10:8091))
   
 ***-bl | --backuplocation***  
