@@ -37,27 +37,25 @@ Optional
 Specifies the number of days to keep backups for before purging them (e.g. 7)
   
 # Usage Example
-`opt/scripts/CouchbaseBackup.sh  --cluster         http://10.16.17.254:8091           
-                                --backuplocation  /opt/couchbase-backup/Prod-Onboarding-CB           
-                                --sourcepath      /opt/couchbase/bin           
+```
+opt/scripts/CouchbaseBackup.sh  --cluster         http://10.16.17.254:8091 
+                                --backuplocation  /opt/couchbase-backup/Prod-Onboarding-CB   
+                                --sourcepath      /opt/couchbase/bin  
                                 --username        backup-admin           
                                 --password        "***********"           
                                 --backuptype      full           
                                 --parallelism     5           
-                                --backupretention 3`          
+                                --backupretention 3
+```
 
 # Output Example 
 
-`2019-08-26 19:46:34 [INFO] [CouchbaseBackup.sh] [Prod-Onboarding-CB] [Backup]          [Full_20190826_1946] [Success] [0m8.653s]
-
+```
+2019-08-26 19:46:34 [INFO] [CouchbaseBackup.sh] [Prod-Onboarding-CB] [Backup]          [Full_20190826_1946] [Success] [0m8.653s]
 2019-08-26 19:46:35 [INFO] [CouchbaseBackup.sh] [Prod-Onboarding-CB] [Integrity Check] [Full_20190826_1946] [Success] [0m8.653s]
-
 2019-08-26 19:46:35 [INFO] [CouchbaseBackup.sh] [Prod-Onboarding-CB] Backup File Deleted - /opt/couchbase-backup/Prod-Onboarding-CB/Full_20190824_2000. Older than 0 days.
-
 2019-08-26 19:46:35 [INFO] [CouchbaseBackup.sh] [Prod-Onboarding-CB] Backup File Deleted - /opt/couchbase-backup/Prod-Onboarding-CB/Full_20190825_2000. Older than 0 days.
-
 2019-08-26 19:46:35 [INFO] [CouchbaseBackup.sh] [Prod-Onboarding-CB] Backup File Deleted - /opt/couchbase-backup/Prod-Onboarding-CB/Full_20190826_1945. Older than 0 days.
-
 2019-08-26 19:46:35 [INFO] [CouchbaseBackup.sh] [Prod-Onboarding-CB] Backup File Deleted - /opt/couchbase-backup/Prod-Onboarding-CB/Full_20190826_1946. Older than 0 days.
-
-2019-08-26 19:46:35 [INFO] [CouchbaseBackup.sh] [Prod-Onboarding-CB] [Backup Purge]    [Full_20190826_1946] [Success] [0m8.653s]`
+2019-08-26 19:46:35 [INFO] [CouchbaseBackup.sh] [Prod-Onboarding-CB] [Backup Purge]    [Full_20190826_1946] [Success] [0m8.653s]
+```
