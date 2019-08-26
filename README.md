@@ -7,6 +7,9 @@ Custom Backup Wrapper for Couchbase.
 2) Run a SQLLite integrity check on the backup just taken
 3) Purge backups in the given clusters directory that is older than X days 
 
+**To Be Added :-**
+1) Push backup to S3 storage (will be added in after step 2, which will allow us to have 2 copies of the new backup (on disk/in cloud) before purging any old backups
+
 # Parameters
 
 ***-c  | --cluster***           
