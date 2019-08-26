@@ -5,28 +5,36 @@ Custom Backup Wrapper for Couchbase
 # Parameters
 
 ***-c  | --cluster***           
-Mandatory* - Specifies the IP Address of the Cluster Node in which to perform the backup + port (e.g. http://192.168.0.10:8091)
+Mandatory
+Specifies the IP Address of the Cluster Node in which to perform the backup + port (e.g. http://192.168.0.10:8091)
   
 ***-bl | --backuplocation***  
-Mandatory - Specifies the location in which the backup should be written to. Creates a folder inside of this location with the  backup type + date (e.g. Full_20190901_2000)
+Mandatory
+Specifies the location in which the backup should be written to. Creates a folder inside of this location with the  backup type + date (e.g. Full_20190901_2000)
 
 ***-sp | --sourcepath***         
-Optional  - Specifies the location of the Couchbase BIN directory (e.g. Default - /opt/couchbase/bin)
+Optional
+Specifies the location of the Couchbase BIN directory (e.g. Default - /opt/couchbase/bin)
   
 ***-bt | --backuptype***          
-Mandatory - Specifies the type of backup we will be running (e.g. full, diff accu)
+Mandatory
+Specifies the type of backup we will be running (e.g. full, diff accu)
   
 ***-u  | --username***         
-Mandatory - Specified the username to use when connecting to the specified cluster (e.g. backup-admin)
+Mandatory
+Specified the username to use when connecting to the specified cluster (e.g. backup-admin)
   
 ***-p  | --password***         
-Mandatory - Specifies the password to use when connecting to the specified cluster (should be using environment variable to stop passing plain text password)
+Mandatory
+Specifies the password to use when connecting to the specified cluster (should be using environment variable to stop passing plain text password)
   
 ***-P  | --parallelism***               
-Optional  - Specifies the number of threads to use when running the backup. (e.g. 5)
+Optional
+Specifies the number of threads to use when running the backup. (e.g. 5)
   
 ***-br | --backupretention***           
-Optional  - Specifies the number of days to keep backups for before purging them (e.g. 7)
+Optional
+Specifies the number of days to keep backups for before purging them (e.g. 7)
   
 # Usage Example
 `opt/scripts/CouchbaseBackup.sh  --cluster         http://10.16.17.254:8091 
