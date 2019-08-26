@@ -1,6 +1,11 @@
 # CouchbaseBackup
 
-Custom Backup Wrapper for Couchbase
+Custom Backup Wrapper for Couchbase.
+
+**There are 3 steps to this script :-**
+1) Perform the backup (Full/Diff/Accu) to the requested location
+2) Run a SQLLite integrity check on the backup just taken
+3) Purge backups in the given clusters directory that is older than X days 
 
 # Parameters
 
