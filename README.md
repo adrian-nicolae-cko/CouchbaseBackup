@@ -37,14 +37,14 @@ Optional
 Specifies the number of days to keep backups for before purging them (e.g. 7)
   
 # Usage Example
-`opt/scripts/CouchbaseBackup.sh  --cluster         http://10.16.17.254:8091 
-                                --backuplocation  /opt/couchbase-backup/Prod-Onboarding-CB 
-                                --sourcepath      /opt/couchbase/bin 
-                                --username        backup-admin 
-                                --password        "***********" 
-                                --backuptype      full 
-                                --parallelism     5 
-                                --backupretention 3`
+`opt/scripts/CouchbaseBackup.sh  --cluster         http://10.16.17.254:8091           
+                                --backuplocation  /opt/couchbase-backup/Prod-Onboarding-CB           
+                                --sourcepath      /opt/couchbase/bin           
+                                --username        backup-admin           
+                                --password        "***********"           
+                                --backuptype      full           
+                                --parallelism     5           
+                                --backupretention 3`          
 
 # Output Example 
 
